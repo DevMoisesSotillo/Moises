@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --cor-principal: #003C43;
+    --cor-secundaria: #135D66;
+    --cor-tercera: #77B0AA;
+    --cor-letras: #E3FEF7;
+
+    --fontes-letras-p: "Montserrat", sans-serif;
+    --fontes-letras-h1:'Krona One', sans-serif ;
+}
+
+body {
+background-color: var(--cor-principal);
+color: var(--cor-letras);
+box-sizing: border-box;
+}
+.cabesalho_menu_link{
+    font-family: var(--fontes-letras-h1);
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--cor-tercera);
+    text-decoration: none;
+}
+.cabesalho{
+    padding: 2% 0% 0% 10%;
+}
+.cabesalho_menu{
+    display: flex;
+    gap: 80px;
+}
+
+.Moises {
+    color: var(--cor-secundaria);
+}
+.moises1 {
+    color: var(--cor-tercera);
+}
+
+.apresentacao{
+    padding: 8% 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+.conteudo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.titulo{
+    font-size: 2.25rem ;
+    font-family: var(--fontes-letras-h1);
+}
+
+.parrafo{
+    font-size: 1.5rem;
+    font-family: var(--fontes-letras-p)
+
+}
+
+.botonlin{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+    font-family: var(--fontes-letras-p);
+}
+
+.nomelink{
+
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    border: 3px solid var(--cor-secundaria);
+    width: 50%;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    padding: 21px 0px;
+    text-decoration: none;
+    color: var(--cor-letras);
+    font-family: var(--fontes-letras-p);
+
+}
+
+.botonlin :hover{
+    background-color: #272727;
+    padding: 3%;
+}
+
+.redes{
+    font-family: var(--fontes-letras-h1);
+    font-weight: 400;
+    
+}
+
+.barrafinal{
+    background-color: var(--cor-secundaria);
+    color: var(--cor-letras);
+    font-size: 1.25rem;
+    font-family: var(--fontes-letras-p);
+    text-align: center;
+    padding: 5px;
+    font-weight: 600;
+}
+
+.imagem{
+    width: 50%;
+    border-radius: 3%;
+    
+} 
+
+@media ( max-width: 1043px) {
+    .apresentacao{
+        flex-direction: column-reverse;
+    }
+
+    .cabesalho{
+        padding: 10% ;
+    }
+
+    .cabesalho_menu{
+        justify-content: center;
+        padding: 5%;
+    }
+
+    .conteudo{
+        width: auto;
+    }
+}
